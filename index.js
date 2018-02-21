@@ -66,17 +66,11 @@ function displayCalendar() {
 
     document.getElementById("calendar").innerHTML = calendarBody;
 }
-function split(myArray,obj){
-   let  myArray=obj.split('/');
-    month =   myArray[1];
-    year =   myArray[0];
-    return myArray;
-}
+
 //update view date
 function updateCalendar() {
     newDate = moment(dateNow).format('YYYY/M');
-
-    split(newdateArray,newDate);
+    let newdateArray=dateNow.split('/');
     month =  newdateArray[1];
     year =  newdateArray[0];
     displayCalendar()
