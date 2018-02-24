@@ -4,14 +4,21 @@
 
     <title>Calendar</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/jalali-moment/dist/jalali-moment.browser.js"></script>
+    <script src="helper.js"></script>
     <script src="index.js"></script>
+
 </head>
 
-<body onload="displayCalendar()">
-<div id="calendar"></div>
-<button onclick="previousMonth()">previous</button>
-<button onclick="nextMonth()">next</button>
+<body>
+    <div id="calendar"></div>
+    <button id="previous">
+        previous
+    </button>
+    <button  id="next">
+        next
+    </button>
 </body>
 
 </html>
