@@ -30,7 +30,11 @@ $(document).ready(function() {
         //get month length
         let numOfDays = moment(dateNow).endOf('month').format("jD");
         //white space for previous month ,loose one for each cell
-        
+
+        let daysOfMonth =  Array.apply(null, {length: numOfDays}).map(Number.call, Number);
+console.log(daysOfMonth)
+        let daysOfweek = chunks(daysOfMonth,7);
+        console.log(daysOfweek);
         while (weekday > 0) {
             htmlContent += "<td class='monthPre'></td>";
             weekday--;
@@ -40,7 +44,7 @@ $(document).ready(function() {
         let day = 1;
         while (day <= numOfDays) {
             // if friday go to new line.
-            console.log(chunks([day],7));
+
             if (weekday2 > 6) {
                 weekday2 = 0;
                 htmlContent += "</tr><tr>";
