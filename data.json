@@ -1,0 +1,18 @@
+{
+  "myJSON": {
+    "events": [
+      {
+        "caption": "an event",
+        "date": "1396/12/12"
+      },
+      {
+        "caption": "an event",
+        "date": "1396/12/2"
+      },
+      {
+        "caption": "an even2t",
+        "date": "1396/12/12"
+      }
+    ]
+  }
+}
