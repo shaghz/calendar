@@ -45,7 +45,7 @@ require.register = function (name, definition) {
 };
 
 /**
- * Define a module's exports immediately with `exports`.
+ * Define a module's.js exports immediately with `exports`.
  *
  * @param {String} name
  * @param {Generic} exports
@@ -1125,8 +1125,8 @@ jMoment.loadPersian = function (args) {
       , sameElse: 'L'
       }
     , relativeTime:
-      { future: 'در %s'
-      , past: '%s پیش'
+      { future: 'در %s.js'
+      , past: '%s.js پیش'
       , s: 'چند ثانیه'
       , m: '1 دقیقه'
       , mm: '%d دقیقه'

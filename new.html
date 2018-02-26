@@ -1,4 +1,3 @@
-
 <html>
 <head>
 
@@ -12,17 +11,22 @@
 </head>
 
 <body>
-    <div class="calendar" id ="calendar"></div>
-    <button id="previous">
-        previous
-    </button>
-    <button  id="next">
-        next
-    </button>
-
+    <div>
+        <div class="calendar" id="calendar"></div>
+    </div>
 </body>
 <script>
-
-    $(".calendar").makeChange({});
+    $(".calendar").Calendar({
+        monthNames: ["فروردین", "ordibehesht", "khordad", "tir", "mordad", "shahrivar", "mehr", "aban", "azar", "dey", "bahman", "esfand"],
+        calendarEvents: {
+            "events": [
+                {"caption": "an event", "date": "1396/12/12"},
+                {"caption": "an event2", "date": "1396/12/2"},
+                {"caption": "an event3", "date": "1396/12/12"},
+                {"caption": "an event3", "date": "1396/12/12"},
+                {"caption": "an event4", "date": "1396/11/12"}
+            ]
+        }
+    });
 </script>
 </html>
